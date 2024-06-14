@@ -1,17 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>YpNext FrontEnd Test - Greenthumb</title>
+    <title>UpNext FrontEnd Test - Greenthumb</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- fonte -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.scss" />
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <!-- script -->
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <img src="images/icons/logo-white.svg" alt="Greenthumb" />
+    <!--Cabeçalho -->
+    <header id="event-description">
+      <div id="disclaimer">
+        <img src="/images/hero/mobile/logo.png" alt="">
+        <h1 id="about">
+          Find your next green friend
+        </h1>
+        <div id="Arrow">
+          <img src="/images/icons/arrow-down.svg" alt="Arrow">
+        </div>
+      </div>
+    </header>
+
+    <!--1 Section-->
+    <section id="key-filters">
+      <div id="filters">
+        <div id="filter">
+          <div id="filter-1" class="filter-img"><img src="" alt=""></div>
+          <p><b>1. </b>Set the amount of <b>sunlight</b> your plant will get.</p>
+          <select  id="select-sunlight" onchange="handleChangeSunlight(event), showHide()" >
+            <option value="" disabled selected>Select...</option>
+            <option value="no">No</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div id="filter">
+          <div id="filter-2" class="filter-img"><img src="" alt=""><img src="" alt=""></div>
+          <p><b>2. </b>How often do you want to <b>water</b> your plant?</p>
+          <select id="select-water" onchange="handleChangeWater(event), showHide()">
+            <option value="" disabled selected>Select...</option>
+            <option value="regularly">Regularly</option>
+            <option value="daily">Daily</option>
+            <option value="rarely">Rarely</option>
+          </select>
+        </div>
+        <div id="filter">
+          <div id="filter-3" class="filter-img"><img src="" alt=""></div>
+          <p><b>3. </b>Do you have pets? Do they <b>chew</b> plants? </p>
+          <select id="select-pets" onchange="handleChangePets(event), showHide()">
+            <option value="" disabled selected>Select...</option>
+            <option value="true">True</option>
+            <option value="false">False</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!--2 Section-->
+    <section id="no-results">
+      <div id="description" onchange="showHide()">
+        <div id="no-result-text">
+          <h1>No results yet…</h1>
+          <p class="about-result">Use the filters above to find the plant that best fits your environment :) </p>
+
+        </div>
+        <div id="no-result-img">
+          <img src="/images/illustrations/no-results.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!--3 Section-->
+    <section id="plants-results">
+      <div id="all-results" class="results" onchange="showHide()">
+        <div id="picks-img">
+          <img src="/images/hero/mobile/6af84abfa55c96741ed65b5cd9c634cc.png" alt="">
+        </div>
+        <h1>Our picks for you</h1>
+        <div id="plants">
+          <div id="plant-1" class="plant-product">
+            <img src="/images/plant photos/euphorbia-eritrea.png" id="img-1" alt="">
+            <h2>Euphorbia eritrea</h2>
+            <span>$25</span>
+          </div>
+          <div id="plant-2" class="plant-product">
+            <img src="/images/plant photos/succulent-bowl.png" id="img-2" alt="">
+            <h2>Succulent bowl</h2>
+            <span>$25</span>
+          </div>
+          <div id="plant-3" class="plant-product">
+            <img src="/images/plant photos/ponytail-palm.png" id="img-3" alt="">
+            <h2>Ponytail palm</h2>
+            <span>$50</span>
+          </div>
+          <div id="plant-4" class="plant-product">
+            <img src="/images/plant photos/ficus-lyrata.png" id="img-4" alt="">
+            <h2>Ficus lyrata</h2>
+            <span>$50</span>
+          </div>
+          <div id="plant-5" class="plant-product">
+            <img src="/images/plant photos/lucky-bamboo.png" id="img-5" alt="">
+            <h2>Lucky bamboo</h2>
+            <span>$50</span>
+          </div>
+          <div id="plant-6" class="plant-product">
+            <img src="/images/plant photos/calathea-triostar.png" id="img-6" alt="">
+            <h2>Calathea triostar</h2>
+            <span>$50</span>
+          </div>
+          <div id="plant-7" class="plant-product">
+            <img src="/images/plant photos/pilea-peperomioides.png" id="img-7" alt="">
+            <h2>Pilea peperomioides</h2>
+            <span>$35</span>
+          </div>
+          <div id="plant-8" class="plant-product">
+            <img src="/images/plant photos/bunny-ears-cacti.png" id="img-8" alt="">
+            <h2>Bunny ears cacti</h2>
+            <span>$20</span>
+          </div>
+          <div id="plant-9" class="plant-product">
+            <img src="/images/plant photos/monstera-deliciosa.png" id="img-9" alt="">
+            <h2>Monstera deliciosa</h2>
+            <span>$50</span>
+          </div>
+        </div>
+      </div>       
+    </section>
+    
+    <!--Footer -->
+    <footer id="footer">
+      <div class="logo-img">
+        <img src="/images/hero/mobile/logo.png" alt="">
+      </div>
+      <p><span>Entre em contato: </span>oi@greenthumb.com.br</p>
+      <p><span>Ou pelo telefone: </span>(41)99999-9999</p>
+    </footer>
   </body>
+  
 </html>
