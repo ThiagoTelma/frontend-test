@@ -1,0 +1,428 @@
+:root{
+    --primary: #15573f;
+    --secondary: #75bc97;
+    --tertiary: #FD9872;
+    --text-color: rgb(255, 255, 255);
+    --text-color2: #848484;
+    --text-result: #A9A9A9;
+    --plants-color: #257556;
+    --background-color: #f8f8f8;
+
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#event-description{
+    background-image: url(../images/hero/desktop/left-leaves.png),
+                        url(../images/hero/desktop/plantperson.png),
+                        url(../images/hero/desktop/right-leaves.png);
+    background-repeat: no-repeat;
+    background-position: left, 1000px 30px, right;
+    background-color: var(--secondary);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 370px;
+    padding-bottom: 70px;
+    color: var(--text-color);
+}
+
+
+#disclaimer h2{
+    padding-top: 10px;
+    margin-bottom: 3em;
+    width: 209px;
+    height: 25px;
+    font-weight: bold
+    
+}
+
+#disclaimer h1{
+    font-size: 55px;
+    padding-bottom: 100px;
+    text-align: left;
+    max-width: 350px;
+    height: 150px;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+/*Filters Section*/
+
+#filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--text-color2);
+    
+}
+
+#filter{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 18%;
+    margin-top: 1em;
+}
+
+#filter select{
+    padding: 6px 8px;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 1em;
+}
+
+#filter-1{
+    background-image: url(../images/illustrations/sun.png);
+    width: 35%;
+    height: 70%;
+    border-radius: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+#filter-2{
+    background-image: url(../images/illustrations/wateringcan.png);
+    width: 35%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.5em;
+}
+#filter-3{
+    background-image: url(../images/illustrations/dog.png);
+    width: 75px;
+    height: 62px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1.5em;
+}
+
+/* No Results Section*/
+
+#description{
+    background: linear-gradient(rgba(190, 190, 190, 0.8));
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-result);
+    margin-top: 5em;
+    padding-left: 68px;
+    height: 50vh;
+}
+
+#no-result-img{
+    padding-right: 100px;
+}
+
+.about-result{
+    width: 360px;
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#description h1{
+    max-width: 1000px;
+    color: var(--text-color2);
+    font-size: 3em;
+    
+}
+
+/*Plants Section*/
+
+#all-results{
+    display: none;
+    height: 100vh;
+    flex-direction: column;
+    margin-left: 370px;
+    margin-bottom: 22em;
+    background: linear-gradient(rgba(190, 190, 190, 0.8));
+}
+
+#all-results h1{
+    font-size: 55px;
+    font-weight: 700;
+    color:#0C261C;
+}
+
+#picks-img{
+    margin-bottom: 1em;
+}
+
+#plants{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+.plant-product{
+    margin-top: 2em;
+    background-color: #fff;
+    width: 206px;
+    height: 245px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px #575656;
+}
+
+#img-1{
+    width: 107px;
+    height: 161px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 1em;
+    margin-left: 48px;
+}
+#img-2{
+    width: 193px;
+    height: 128px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-left: 10px;
+}
+#img-3{
+    width: 135px;
+    height: 149px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+}
+#img-4{
+    width: 129px;
+    height: 129px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1.2em;
+    margin-bottom: 1.5em;
+    margin-left: 40px;
+}
+#img-5{
+    width: 98px;
+    height: 147px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    margin-left: 50px;
+}
+#img-6{
+    width: 176px;
+    height: 151px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    margin-left: 20px;
+}
+#img-7{
+    width: 143px;
+    height: 143px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    margin-left: 30px;
+}
+#img-8{
+    width: 107px;
+    height: 140px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    margin-left: 60px;
+}
+#img-9{
+    width: 143px;
+    height: 143px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 1em;
+    margin-bottom: .9em;
+    margin-left: 30px;
+    
+}
+
+.plant-product h2{
+    color: var(--plants-color);
+    padding-left: 17px;
+    margin-bottom: .5em;
+    font-size: 1rem;
+}
+
+.plant-product span{
+    font-size: 1rem;
+    color: var(--plants-color);
+    font-weight: bold;
+    padding-left: 17px;
+}
+
+/* Footer */
+
+#footer{
+    background-color: #0C261C;
+    text-align: center;
+    color: var(#f8f8f8);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#footer p{
+    color: #fff;
+    font-size: 1em;
+}
+
+#footer img{
+    margin-bottom: 1em;
+}
+
+#footer span{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Mobile Media*/
+@media (max-width: 450px){
+
+    /* Event Description*/
+    #event-description{
+        flex-direction: column;
+        height: 100vh;
+        background-image: url(/images/hero/mobile/0a1501a5b19dc9ca04dcac6146a16d43.png),url(/images/hero/mobile/mobile-plantperson.png);
+        background-repeat: no-repeat;
+        background-position: top,center 475px;
+    }
+    #disclaimer img{
+        margin-top: 2em;
+        margin-right:500px;
+    }
+
+    /*Filters Section*/
+    #filters{
+        flex-direction: column;
+        align-items: center;
+        width: 425px;
+        height: 100vh;
+        padding: .5em;
+        justify-content: space-around;
+    }
+    #filter{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin-top: .2em;
+    }
+
+    #filter select{
+        padding: 6px 8px;
+        border-radius: 15px;
+        outline: none;
+        margin-top: 1em;
+    }
+
+    #filter-1{
+        background-image: url(../images/illustrations/sun.png);
+        width: 75px;
+        height: 70px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1em;
+    }
+    #filter-2{
+        background-image: url(../images/illustrations/wateringcan.png);
+        width: 105px;
+        height: 75px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 1.5em;
+    }
+    #filter-3{
+        background-image: url(../images/illustrations/dog.png);
+        width: 75px;
+        height: 62px;
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    /* No Results Section */
+    #description{
+        background: linear-gradient(rgba(190, 190, 190, 0.8));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        color: var(--text-result);
+        margin-top: 2em;
+        padding-left: 60px;
+        height: 75vh;
+    }
+    #no-result-img{
+        margin-left: 70px;
+    }
+    #no-result-text h1{
+        width: 380px;
+    }
+    .about-result{
+        width: 320px;
+        font-size: 1.5em;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+
+    /*Plants Section*/
+
+    #all-results{
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        width: 425px;
+        height: 360vh;
+        margin-left: 60px;
+        
+    }
+
+    #all-results h1{
+        max-width: 300px;
+        font-size: 45px;
+        font-weight: 700;
+        color:#0C261C;
+    }
+
+    #picks-img{
+        margin-bottom: 1em;
+    }
+
+    #plants{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        margin-left: 50px;
+        
+    }
+
+    /*Footer*/
+
+    #footer{
+        display: flex;
+        
+    }
+
+}
+
